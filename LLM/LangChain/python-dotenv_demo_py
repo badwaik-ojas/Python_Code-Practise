@@ -1,0 +1,10 @@
+import os
+from dotenv import load_dotenv, find_dotenv
+
+# Load variables from .env file
+load_dotenv(find_dotenv(), override=True)
+
+# Accessing an environment variable
+openai_key = os.environ.get("OPENAI_API_KEY")
+
+print(openai_key)

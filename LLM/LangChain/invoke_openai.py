@@ -1,0 +1,10 @@
+from langchain.chat_models import ChatOpenAI
+import os
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())  # Finds and loads .env
+
+llm = ChatOpenAI()
+response = llm.invoke("Explain quantum mechanics in one sentence")
+
+print(response)
