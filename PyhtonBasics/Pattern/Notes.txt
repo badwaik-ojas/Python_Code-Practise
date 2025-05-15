@@ -1,0 +1,21 @@
+Pseudo Code is simple way of describing an algorithm in plain language or mix of code like natural language instruction
+
+example: addition of 2 number
+
+Begin:
+    num1
+    num2
+    addition = num1 + num2
+
+    return addition
+end
+
+Process to Solve:
+    1. Analyze: Input, Output, Constraints
+    2. Break down the problem into small parts: 
+    3. Remember/enlist the concept
+    4. Take some example or ask: Clear out confusion
+    5. Write a Pseudo Code
+    6. Dry run from the Pseudo Code you wrote
+    7. Write down your solution
+    8. Lookout of the edge cases
