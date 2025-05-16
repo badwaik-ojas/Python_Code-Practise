@@ -27,7 +27,7 @@ prompt = ChatPromptTemplate.from_messages([
     ("placeholder", "{agent_scratchpad}"),  # Required for tool-using agents
 ])
 
-# 4. Create Tool-Using Agent
+# 4. Create Tool-Ucsing Agent
 agent = create_tool_calling_agent(llm=llm, tools=tools, prompt=prompt)
 
 # 5. Create Executor
@@ -35,5 +35,5 @@ agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
 # 6. Test Example
 user_query_1 = "What is (3.14159 * 2)**2? please say somthing creative about the number once you calculate"
-response = agent_executor.invoke({"input": user_query_1})
+response = agent_executor.invoke({"input": user_query_1}, )
 print("Response 1:", response)
