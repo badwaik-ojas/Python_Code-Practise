@@ -7,7 +7,9 @@ from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain.agents import initialize_agent, AgentType
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
+import warnings
 
+warnings.filters('ignore')
 # Step 1: Initialize the DuckDuckGo search wrapper
 search = DuckDuckGoSearchAPIWrapper(
     backend='api',

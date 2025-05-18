@@ -14,3 +14,4 @@ pandas
 langchain-community
 duckduckgo-search
 langchain_core
+wikipedia
