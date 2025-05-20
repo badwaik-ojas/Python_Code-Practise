@@ -8,7 +8,7 @@ pinecone = Pinecone()
 pinecone.list_indexes()
 
 
-index_name = "langchain"
+index_name = "bhagwat-gita-quotes"
 
 if index_name in pinecone.list_indexes().names():
     print(f"Deleting index: {index_name}")

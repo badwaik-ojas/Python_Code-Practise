@@ -1,0 +1,95 @@
+🔍 What Is Selection Sort?
+Selection Sort is a comparison-based sorting algorithm that works by repeatedly selecting the minimum element (from the unsorted part) and placing it at the beginning of the array.
+
+It divides the array into two parts:
+
+Sorted part (starts empty)
+
+Unsorted part (initially the entire array)
+
+🧠 Core Idea / Philosophy
+In every pass (or iteration), find the minimum element from the unsorted portion.
+
+Swap it with the first unsorted element, expanding the sorted part of the array by one.
+
+After n − 1 passes, the array is sorted.
+
+✅ Steps in Selection Sort
+Start from the first element.
+
+Find the smallest element in the unsorted part of the array.
+
+Swap it with the element at the current position.
+
+Repeat for the next position.
+
+🧾 Example
+Given array:
+[12, 25, 11, 34, 90, 22]
+
+Pass 1:
+Find minimum from [12, 25, 11, 34, 90, 22] → 11
+
+Swap with first element → [11, 25, 12, 34, 90, 22]
+
+Pass 2:
+Find minimum from [25, 12, 34, 90, 22] → 12
+
+Swap with 25 → [11, 12, 25, 34, 90, 22]
+
+Pass 3:
+Find minimum from [25, 34, 90, 22] → 22
+
+Swap with 25 → [11, 12, 22, 34, 90, 25]
+
+Pass 4:
+Find minimum from [34, 90, 25] → 25
+
+Swap with 34 → [11, 12, 22, 25, 90, 34]
+
+Pass 5:
+Find minimum from [90, 34] → 34
+
+Swap with 90 → [11, 12, 22, 25, 34, 90]
+
+Pass 6:
+Only one element left, array is sorted.
+
+⏱️ Time and Space Complexity
+Metric	Complexity
+Best Case	O(n²)
+Average Case	O(n²)
+Worst Case	O(n²)
+Space Complexity	O(1) (in-place)
+Stable?	❌ Not stable by default
+
+💡 Intuitive Analogy
+Imagine students standing in a line of random heights:
+
+You (the teacher) want to sort them from shortest to tallest.
+
+You look through all students to find the shortest.
+
+Bring the shortest to the front of the line.
+
+Then, repeat the process from the next student onward.
+
+🔧 Implementation Tip
+To implement in Python:
+
+python
+Copy
+Edit
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
+
+# Example
+arr = [12, 25, 11, 34, 90, 22]
+print("Sorted array:", selection_sort(arr))

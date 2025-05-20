@@ -1,0 +1,48 @@
+Topic: Insertion Sort Explained with Card Analogy
+Pre-requisite
+Assumes you already understand Bubble Sort and Selection Sort.
+
+Core Concept
+Insertion Sort works similarly to how we sort cards in our hand while playing.
+
+Key idea: Maintain a sorted subarray (left part), and insert each new element into its correct position in that subarray by shifting larger elements to the right.
+
+Step-by-Step Visualization (with Example)
+Input array:
+
+csharp
+Copy
+Edit
+[12, 25, 11, 34, 90, 22]
+Initial Understanding:
+One element is always sorted.
+
+Sorting starts from the second element.
+
+Total of n - 1 rounds for n elements.
+
+Rounds Overview
+Round	Element Picked	Action	Array State
+1	25	25 > 12 → already in correct position	[12, 25, 11, 34, 90, 22]
+2	11	11 < 25 → shift 25; 11 < 12 → shift 12; insert 11 at start	[11, 12, 25, 34, 90, 22]
+3	34	34 > 25 → already in correct position	[11, 12, 25, 34, 90, 22]
+4	90	90 > 34 → already in correct position	[11, 12, 25, 34, 90, 22]
+5	22	22 < 90 → shift 90; 22 < 34 → shift 34; 22 < 25 → shift 25; insert 22	[11, 12, 22, 25, 34, 90]
+
+Card Game Analogy
+You get cards randomly: [8, 2, 5, 10]
+
+You hold one card (e.g., 8).
+
+Then you insert each new card in the correct place by shifting bigger cards to the right.
+
+Exactly how Insertion Sort works.
+
+Key Observations
+Always maintain a sorted left part of the array.
+
+When a new element is picked, compare it backwards in the sorted section and insert it in place.
+
+If the current element is greater than the last element of the sorted subarray, no further comparisons are needed.
+
+The number of rounds = n - 1, as the first element is considered already sorted.

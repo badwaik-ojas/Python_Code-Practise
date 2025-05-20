@@ -1,0 +1,81 @@
+📌 Topic: Bubble Sort - Notes and Expert View
+1. What is Sorting?
+Definition: Sorting is the process of arranging elements in a specific order (usually ascending or descending).
+
+Importance:
+
+Helps in efficient searching.
+
+Commonly used in real-world applications like sorting products by price/date on e-commerce platforms.
+
+Widely used in databases for fetching latest or relevant records.
+
+2. Introduction to Bubble Sort
+Concept: Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+
+Mnemonic: Imagine forming a “bubble” around two adjacent elements.
+
+Goal: With each pass, place the next largest (or smallest) element in its correct position.
+
+3. Bubble Sort - Working Mechanism
+Let’s assume ascending order for clarity.
+
+Example Array:
+[12, 25, 11, 34, 90, 22]
+
+Pass-by-Pass Observation:
+Pass 1: Largest element "bubbles" to the end.
+
+Result: [12, 11, 25, 34, 22, 90] — 90 at correct position.
+
+Pass 2: Next largest bubbles up.
+
+Result: [11, 12, 25, 22, 34, 90] — 34 at correct position.
+
+Pass 3: [11, 12, 22, 25, 34, 90] — 25 in place.
+
+Pass 4 & 5: Array becomes fully sorted.
+
+Key Observations:
+After every pass:
+
+The next largest element moves to its correct position.
+
+Total passes required = n - 1 for an array of length n.
+
+Each pass reduces the effective array size by 1 (as the end portion is already sorted).
+
+4. Implementation Strategy (Python Perspective)
+Two Nested Loops:
+Outer Loop (for passes): Runs from 0 to n - 1.
+
+Inner Loop (for comparisons): Compares adjacent elements from 0 to n - pass - 1.
+
+Key Points:
+Swap if arr[j] > arr[j + 1].
+
+With each outer iteration, ignore the last i elements as they are sorted.
+
+Optimization (expert tip): If no swaps happen in a pass, break early — the array is sorted.
+
+5. Python Pseudocode:
+python
+Copy
+Edit
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        swapped = False  # Optimization: track if any swap happened
+        for j in range(n - 1 - i):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:  # No swaps in this pass => already sorted
+            break
+6. Time & Space Complexity
+Case	        Time    Complexity	Reason
+Best Case	    O(n)	Already sorted, with early exit
+Average Case	O(n²)	Nested comparisons & swaps
+Worst Case	    O(n²)	Completely reversed array
+Space	        O(1)	In-place sorting, no extra space used
+
