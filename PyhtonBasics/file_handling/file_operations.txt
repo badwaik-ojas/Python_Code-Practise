@@ -1,0 +1,119 @@
+Python File Operations Overview
+✅ 1. Reading a File
+Read Entire File at Once
+python
+Copy
+Edit
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+Mode used: "r" (read mode)
+
+Common Error: File not found (FileNotFoundError) if the file doesn’t exist.
+
+Note: Only reads the content; cannot write in this mode.
+
+Read File Line by Line
+python
+Copy
+Edit
+with open("example.txt", "r") as file:
+    for line in file:
+        print(line.strip())  # Removes newline characters
+Uses strip() to remove trailing \n characters.
+
+Iterating over the file object reads it line-by-line.
+
+✅ 2. Writing to a File
+Overwrite File Content
+python
+Copy
+Edit
+with open("example.txt", "w") as file:
+    file.write("Hello World\n")
+    file.write("This is a new line\n")
+Mode used: "w" (write mode)
+
+Effect: Overwrites entire file content.
+
+Use Case: Creating or resetting file content.
+
+Append to a File
+python
+Copy
+Edit
+with open("example.txt", "a") as file:
+    file.write("Appended line\n")
+Mode used: "a" (append mode)
+
+Effect: Adds content to the end of the file.
+
+Safe: Does not remove existing data.
+
+✅ 3. Writing Multiple Lines at Once
+python
+Copy
+Edit
+lines = ["First line\n", "Second line\n", "Third line\n"]
+with open("example.txt", "a") as file:
+    file.writelines(lines)
+Appends a list of lines.
+
+Make sure each line in the list ends with \n.
+
+✅ 4. Working with Binary Files
+Write Bytes to Binary File
+python
+Copy
+Edit
+with open("example.bin", "wb") as file:
+    file.write(b"Hello World in binary")
+Mode used: "wb" (write binary)
+
+Data: Written as bytes (prefix with b).
+
+Read from Binary File
+python
+Copy
+Edit
+with open("example.bin", "rb") as file:
+    content = file.read()
+    print(content)
+Mode used: "rb" (read binary)
+
+Output: Byte content (e.g., b'Hello World in binary')
+
+✅ 5. Copy Content from One File to Another
+Copy from source to destination
+python
+Copy
+Edit
+with open("example.txt", "r") as source_file:
+    content = source_file.read()
+
+with open("destination.txt", "w") as destination_file:
+    destination_file.write(content)
+Use Case: Creating a backup or transforming file content.
+
+Behavior: If destination.txt doesn’t exist, it will be created.
+
+✅ File Modes Cheat Sheet
+Mode	Description
+"r"	Read (default); file must exist
+"w"	Write; overwrites file or creates new
+"a"	Append; adds to end or creates file
+"r+"	Read + Write
+"w+"	Write + Read (overwrites file)
+"a+"	Append + Read
+"rb"	Read in binary mode
+"wb"	Write in binary mode
+"ab"	Append in binary mode
+
+✅ Common Tips
+Always use with open(...) as file: – it automatically closes the file.
+
+Use file.read() to read all at once, or iterate line-by-line for memory efficiency.
+
+Use strip() to remove unwanted newline characters.
+
+Always be careful with "w" mode—it erases file content.

@@ -1,0 +1,193 @@
+1. What Are Modules and Packages in Python?
+Module: A file that contains Python code (like functions, classes, or variables). For example, math.py.
+
+Package: A folder that contains multiple modules and a special file called __init__.py.
+
+2. Why Use Modules and Packages?
+They help organize your code.
+
+Allow you to reuse existing functions without writing everything from scratch.
+
+Python has many built-in modules and third-party packages (like math, numpy, etc.) that save time.
+
+3. How to Use Built-in Modules (Like math)
+To use a module, you need to import it:
+
+python
+Copy
+Edit
+import math
+print(math.sqrt(16))  # Output: 4.0
+print(math.pi)        # Output: 3.141592...
+You can also import specific functions:
+
+python
+Copy
+Edit
+from math import sqrt, pi
+print(sqrt(25))  # Output: 5.0
+print(pi)        # Output: 3.141592...
+Or import everything (not recommended for large modules):
+
+python
+Copy
+Edit
+from math import *
+print(sqrt(16))  # Output: 4.0
+4. What If the Module Isn’t Installed (e.g., numpy)?
+Some packages are not installed by default.
+
+To install them, use:
+
+bash
+Copy
+Edit
+pip install numpy
+Or list them in a requirements.txt file and run:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Then you can use it in your code:
+
+python
+Copy
+Edit
+import numpy as np  # 'np' is a short alias
+arr = np.array([1, 2, 3, 4])
+print(arr)
+5. How to Create Your Own Module and Package
+Step-by-step:
+Create a folder – This will be your package (e.g., mypackage/).
+
+Inside the folder, add a file named __init__.py – Even if it’s empty, it tells Python this is a package.
+
+Create your own module file, like maths.py, and add a function:
+
+python
+Copy
+Edit
+# maths.py
+def addition(a, b):
+    return a + b
+Now import and use your custom function:
+
+python
+Copy
+Edit
+from mypackage.maths import addition
+print(addition(2, 3))  # Output: 5
+Alternative import:
+
+python
+Copy
+Edit
+from mypackage import maths
+print(maths.addition(2, 3))
+Conclusion
+Modules help break code into manageable parts.
+
+Packages are folders of related modules.
+
+You can use built-in, third-party, or custom modules.
+
+Use import, from ... import ..., and pip to work with them.
+
+Concept	            Purpose
+package	            Groups related modules to organize large programs
+module (.py)	    A single file with reusable functions/classes
+__init__.py	        Initializes the folder as a package
+import keyword	    Used to bring functions/classes from modules into your code
+pip install	Used    to install external packages like numpy, pandas, etc.
+
+XXX
+
+✅ What is a Package or Library in Python?
+A library is a collection of pre-written code (functions, classes, modules) that you can use in your own programs.
+
+A package is a collection of Python modules organized in directories that include a special __init__.py file.
+
+Standard libraries come built-in with Python, so you don't need to install them manually.
+
+🧰 Standard Python Libraries Discussed
+1. array
+Used to create compact, typed arrays.
+
+Example:
+
+import array
+arr = array.array('i', [1, 2, 3, 4])  # 'i' means integer
+print(arr)
+2. math
+Provides mathematical functions.
+
+Examples:
+
+import math
+print(math.sqrt(16))      # Square root: 4.0
+print(math.pi)            # Value of Pi
+3. random
+Used to generate random values.
+
+Examples:
+
+import random
+print(random.randint(1, 10))  # Random integer from 1 to 10
+print(random.choice(['apple', 'banana', 'cherry']))  # Randomly pick from list
+
+4. os
+Used for interacting with the operating system (file/directory management).
+
+Examples:
+
+import os
+print(os.getcwd())              # Current working directory
+os.mkdir("test_dir")            # Make a new directory
+5. shutil
+Used for file operations like copying, moving, or deleting.
+
+Example:
+
+import shutil
+shutil.copyfile("source.txt", "destination.txt")  # Copy contents
+
+6. json
+Used for data serialization: converting Python data to JSON and vice versa.
+
+Examples:
+
+import json
+data = {"name": "Krish", "age": 25}
+json_str = json.dumps(data)  # Convert dict to JSON string
+parsed_data = json.loads(json_str)  # Convert back to dictionary
+print(parsed_data)
+
+XXX
+
+7. csv
+Used to read and write CSV files.
+
+Writing example:
+
+import csv
+with open("example.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Name", "Age"])
+    writer.writerow(["Krish", 32])
+Reading example:
+
+with open("example.csv", "r") as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+📌 Summary of Uses:
+Library	        Purpose
+array	        Create typed arrays
+math	        Perform mathematical operations
+random	        Generate random numbers/choices
+os	            Handle file/directory operations
+shutil	        Copy/move/delete files
+json	        Serialize/deserialize JSON
+csv	            Handle CSV file I/O
