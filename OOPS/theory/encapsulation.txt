@@ -1,0 +1,46 @@
+Encapsulation in Python: A Simple Explanation
+The video discusses encapsulation in object-oriented programming (OOP), which is essentially about:
+
+Bundling data (variables) and methods (functions) together in a single unit (class)
+Controlling access to certain components of that unit
+
+Access Modifiers in Python
+Python has three types of access modifiers for variables:
+1. Public Variables
+
+Regular variables like self.name
+Can be accessed from anywhere in the program
+No special syntax required
+
+2. Protected Variables
+
+Created using a single underscore: self._name
+Should only be accessed within the class and its subclasses (inherited classes)
+Not strictly enforced by Python, but a programming convention
+
+3. Private Variables
+
+Created using double underscores: self.__name
+Should only be accessed within the class itself
+Python "name mangles" these variables (renames them internally to _ClassName__name)
+
+Getter and Setter Methods
+When you make variables private, you can still provide controlled access through:
+
+Getter methods: Functions that return the value of a private variable
+Setter methods: Functions that change the value of a private variable (often with validation)
+
+Why Encapsulation Matters
+The instructor uses a washing machine analogy:
+
+You see buttons and openings (public interface)
+You don't see the internal machinery (private components)
+
+Benefits of encapsulation:
+
+Protection: Prevents accidental changes to important data
+Validation: Can check values before setting them (like ensuring age isn't negative)
+Maintenance: Easier to modify internal workings without affecting other code
+
+This is the first part of a two-part discussion. The next part will cover abstraction, which is about hiding complex implementation details and exposing only necessary features.
+

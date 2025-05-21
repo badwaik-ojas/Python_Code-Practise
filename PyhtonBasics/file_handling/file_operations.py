@@ -9,3 +9,6 @@ with open("PyhtonBasics/file_handling/read_file.txt", "r") as file:
 with open("PyhtonBasics/file_handling/write_file.txt", "w") as file:
     file.write("Hello World\n")
     file.write("This is a new line\n")
+
+with open("PyhtonBasics/file_handling/read_file.txt",'r') as file:
+    print(file.readlines())

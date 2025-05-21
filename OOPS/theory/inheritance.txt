@@ -1,0 +1,71 @@
+🧠 Concept Recap: Inheritance in Python
+Inheritance is a key feature of Object-Oriented Programming (OOP).
+
+It allows a child class to inherit attributes and methods from a parent class.
+
+This promotes code reuse and supports the "is-a" relationship (e.g., Tesla is a Car).
+
+🚗 Parent Class: Car
+1. Definition
+python
+Copy
+Edit
+class Car:
+    def __init__(self, windows, doors, engine_type):
+        self.windows = windows
+        self.doors = doors
+        self.engine_type = engine_type
+
+    def drive(self):
+        print(f"The person will drive the {self.engine_type} car.")
+2. Explanation
+__init__: Initializes windows, doors, and engine_type.
+
+drive(): Prints a message using the engine type.
+
+3. Usage
+python
+Copy
+Edit
+car1 = Car(4, 5, "petrol")
+car1.drive()  # Output: The person will drive the petrol car.
+⚡ Child Class: Tesla (Single Inheritance)
+1. Definition
+python
+Copy
+Edit
+class Tesla(Car):  # Tesla inherits from Car
+    def __init__(self, windows, doors, engine_type, is_self_driving):
+        super().__init__(windows, doors, engine_type)
+        self.is_self_driving = is_self_driving
+
+    def self_driving_feature(self):
+        print(f"Tesla supports self-driving: {self.is_self_driving}")
+2. Explanation
+super().__init__(): Calls the parent (Car) constructor to initialize shared attributes.
+
+is_self_driving: New attribute specific to Tesla.
+
+self_driving_feature(): Method unique to Tesla.
+
+3. Usage
+python
+Copy
+Edit
+tesla1 = Tesla(4, 5, "electric", True)
+
+tesla1.drive()  # Inherited from Car
+# Output: The person will drive the electric car.
+
+tesla1.self_driving_feature()
+# Output: Tesla supports self-driving: True
+✅ Key Takeaways
+super() allows reuse of the parent class’s __init__() method and avoids repeating code.
+
+Child classes can:
+
+Inherit everything from the parent.
+
+Override or extend functionality as needed.
+
+Attributes and methods from the parent are available in the child unless explicitly overridden.

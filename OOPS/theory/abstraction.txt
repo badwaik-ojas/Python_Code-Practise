@@ -1,0 +1,87 @@
+✅ Topic: Abstraction in Python (OOP Pillar)
+🔹 Definition of Abstraction
+Abstraction is one of the core pillars of Object-Oriented Programming (OOP).
+
+It means hiding complex implementation details and exposing only essential features to the user.
+
+Purpose: Reduces programming complexity and effort.
+
+🧠 Real-world Examples of Abstraction
+Washing Machine:
+
+You interact with buttons (start, timer, dry) without knowing how the internal motor or dryer works.
+
+Mobile Phones / AC Remotes / Laptops:
+
+You press "Shutdown" or "Open App"—you don’t see how memory is allocated or how tasks run internally.
+
+🧪 Abstraction in Python – Practical Code Example
+🔸 1. Import Required Classes
+python
+Copy
+Edit
+from abc import ABC, abstractmethod
+ABC: Abstract Base Class
+
+abstractmethod: Decorator used to define abstract methods
+
+🔸 2. Define an Abstract Class
+python
+Copy
+Edit
+class Vehicle(ABC):
+    def drive(self):
+        print("The vehicle is used for driving.")
+
+    @abstractmethod
+    def start_engine(self):
+        pass
+Vehicle is an abstract class because it inherits from ABC.
+
+start_engine() is an abstract method—has no implementation and must be overridden.
+
+🔸 3. Create a Derived (Child) Class
+python
+Copy
+Edit
+class Car(Vehicle):
+    def start_engine(self):
+        print("Car engine started.")
+Car inherits Vehicle
+
+Implements the start_engine() method
+
+🔸 4. Function to Operate the Vehicle
+python
+Copy
+Edit
+def operate_vehicle(vehicle):
+    vehicle.start_engine()
+    vehicle.drive()
+🔸 5. Use the Classes
+python
+Copy
+Edit
+car = Car()
+operate_vehicle(car)
+✅ Output
+csharp
+Copy
+Edit
+Car engine started.
+The vehicle is used for driving.
+🧩 Key Concepts Recap
+Abstract classes cannot be instantiated directly.
+
+Any subclass of an abstract class must implement all abstract methods.
+
+Abstraction enforces structure and hides internal logic from the user.
+
+Promotes code reusability and cleaner design.
+
+💡 Conclusion
+Abstraction allows developers to focus on what an object does rather than how it does it.
+
+Real-world analogies help reinforce the concept (e.g., washing machine, mobile phone).
+
+Python provides abc module to implement abstraction using abstract classes and methods.

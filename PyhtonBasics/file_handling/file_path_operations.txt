@@ -1,0 +1,104 @@
+✅ 1. Creating a New Directory
+Objective: Create a new directory named package.
+
+Code:
+
+python
+Copy
+Edit
+import os
+
+new_directory = "package"
+os.mkdir(new_directory)
+print(f"Directory '{new_directory}' created")
+✅ 2. Listing Files and Folders in the Current Directory
+Objective: List all files and folders in the current working directory.
+
+Code:
+
+python
+Copy
+Edit
+items = os.listdir(".")
+print(items)
+✅ 3. Joining Paths Correctly
+Problem: Paths are different across OSes (Windows \, Linux/Mac /).
+
+Solution: Use os.path.join() for platform-independent paths.
+
+Code:
+
+python
+Copy
+Edit
+directory_name = "folder"
+file_name = "file.txt"
+relative_path = os.path.join(directory_name, file_name)
+print(relative_path)
+
+absolute_path = os.path.join(os.getcwd(), directory_name, file_name)
+print(absolute_path)
+✅ 4. Checking File or Directory Existence
+Objective: Check whether a file or folder exists before performing operations.
+
+Code:
+
+python
+Copy
+Edit
+path = "example1.txt"
+
+if os.path.exists(path):
+    print(f"The path '{path}' exists")
+else:
+    print(f"The path '{path}' does not exist")
+Use Case: Prevent errors before opening/writing/reading a file.
+
+✅ 5. Check if Path is File or Directory
+Objective: Distinguish between files and folders.
+
+Code:
+
+python
+Copy
+Edit
+path = "example.txt"
+
+if os.path.isfile(path):
+    print(f"The path '{path}' is a file")
+elif os.path.isdir(path):
+    print(f"The path '{path}' is a directory")
+else:
+    print(f"The path '{path}' is neither a file nor a directory")
+✅ 6. Getting the Absolute Path from a Relative Path
+Objective: Convert a relative path to an absolute path.
+
+Code:
+
+python
+Copy
+Edit
+relative_path = "folder/file.txt"
+absolute_path = os.path.abspath(relative_path)
+print(absolute_path)
+✅ 7. Best Practices & Key Notes
+Always check for path existence (os.path.exists) before performing operations.
+
+Use os.path.join() to construct paths to ensure cross-platform compatibility.
+
+Prefer os.path.abspath() when absolute paths are needed.
+
+Use os.path.isfile() and os.path.isdir() to distinguish between files and folders.
+
+Keep code modular when handling directory/file operations in projects.
+
+🧪 Suggested Practice Ideas
+Write a script that:
+
+Lists only files or only directories.
+
+Recursively finds all .txt files in a folder.
+
+Creates a folder if it doesn’t exist, then creates a file inside it.
+
+Gets file sizes and modification timestamps.

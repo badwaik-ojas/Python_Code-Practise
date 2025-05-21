@@ -1,0 +1,60 @@
+🔹 Topic: Custom Exception Handling in Python
+✅ Why Custom Exceptions?
+Useful in large applications to handle specific, meaningful errors.
+
+Helps differentiate between expected input validation errors and unexpected code-level bugs.
+
+Improves user feedback and debuggability.
+
+🧱 Use Case Example
+A government exam form requires:
+
+Valid age range: between 20 and 30 (inclusive).
+
+If outside this range → raise a custom exception.
+
+🧩 Step-by-Step Breakdown
+1. Create a Base Custom Exception Class
+python
+Copy
+Edit
+class Error(Exception):
+    """Base class for other custom exceptions"""
+    pass
+2. Create a Specific Custom Exception
+python
+Copy
+Edit
+class DobException(Error):
+    """Raised when age is not between 20 and 30"""
+    pass
+3. User Input & Age Calculation
+python
+Copy
+Edit
+try:
+    year = int(input("Enter your year of birth: "))
+    age = 2024 - year
+
+    if 20 <= age <= 30:
+        print("Your age is valid. You can apply for the exam.")
+    else:
+        raise DobException
+
+except DobException:
+    print("Your age should be greater than 20 and less than 30 for this exam.")
+⚙️ Key Concepts Demonstrated
+Concept	Explanation
+class CustomException(Exception)	Inherit from built-in Exception class to define a custom error.
+raise	Used to throw the exception explicitly.
+try/except	Wrap risky code in try and handle known errors with except.
+Chaining Custom Exceptions	DobException inherits from a generic Error class to maintain a hierarchy.
+
+🧠 Good Practices Highlighted
+Catch exceptions using specific except blocks.
+
+Provide clear error messages for better user experience.
+
+Always use try-except when you raise exceptions manually.
+
+Define a base exception to unify multiple custom exceptions.

@@ -1,0 +1,104 @@
+Python OOPs (Object-Oriented Programming) - Introduction to Classes and Objects
+1. What is Object-Oriented Programming (OOP)?
+A programming paradigm using objects to model real-world scenarios.
+
+Enhances modularity and code reusability.
+
+Crucial for end-to-end project development in real applications.
+
+2. Core Concepts of OOP
+Class
+Acts as a blueprint for creating objects.
+
+Defines attributes (data) and methods (functions).
+
+Created using the class keyword.
+
+python
+Copy
+Edit
+class Car:
+    pass
+Object
+An instance of a class.
+
+Can access attributes and methods defined in the class.
+
+python
+Copy
+Edit
+audi = Car()
+bmw = Car()
+Use type(audi) to verify the object type.
+
+Output: <class '__main__.Car'>
+
+3. Object Attributes (Instance Variables)
+Improper Way to Add Attributes
+Direct assignment (not recommended):
+
+python
+Copy
+Edit
+audi.windows = 4
+tata = Car()
+tata.doors = 4
+Issue: These attributes are only attached to specific objects and not shared or structured.
+
+Accessing Attributes
+Works only if the object has that attribute.
+
+python
+Copy
+Edit
+print(audi.windows)  # 4
+print(tata.windows)  # Error: No attribute 'windows'
+4. Proper Way: Using a Constructor (__init__ Method)
+Constructor (__init__)
+Special method that runs automatically when an object is created.
+
+Used to initialize instance variables.
+
+Syntax Example:
+python
+Copy
+Edit
+class Dog:
+    def __init__(self, name, age):
+        self.name = name      # instance variable
+        self.age = age        # instance variable
+Object Creation with Constructor
+python
+Copy
+Edit
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Lucy", 4)
+Accessing Instance Variables
+python
+Copy
+Edit
+print(dog1.name)  # Buddy
+print(dog1.age)   # 3
+print(dog2.name)  # Lucy
+print(dog2.age)   # 4
+5. How self Works
+self refers to the current instance of the class.
+
+Used to access instance variables and methods within the class.
+
+While self is a convention, other names can technically be used (e.g., this, obj, etc.).
+
+6. Viewing Object Structure
+Use dir(object) to see all methods and attributes (including built-ins like __init__, __str__, etc.)
+
+Helps understand the internal structure of an object.
+
+7. Summary of Best Practices
+Always define attributes using the constructor for consistency and safety.
+
+Use self to define and access instance variables inside the class.
+
+Avoid assigning new attributes outside the constructor.
+
+
+XX

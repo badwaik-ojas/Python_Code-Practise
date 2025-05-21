@@ -1,0 +1,116 @@
+🔷 What is Polymorphism in Python?
+Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows the same interface (like a method name) to behave differently for different objects.
+
+Simple Definition:
+Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling a single action to behave differently based on the object performing it.
+
+🔸 Types of Polymorphism in Python
+1. Method Overriding (Runtime Polymorphism)
+Happens when a child class overrides a method in its parent class.
+
+Same method name, different implementation in different classes.
+
+🔧 Example 1: Using Animal, Dog, and Cat classes
+python
+Copy
+Edit
+class Animal:
+    def speak(self):
+        return "Some generic animal sound"
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"
+✅ Calling overridden methods:
+
+python
+Copy
+Edit
+dog = Dog()
+cat = Cat()
+
+print(dog.speak())  # Output: Woof
+print(cat.speak())  # Output: Meow
+✅ Using polymorphic function:
+
+python
+Copy
+Edit
+def animal_speak(animal):
+    print(animal.speak())
+
+animal_speak(dog)  # Output: Woof
+animal_speak(cat)  # Output: Meow
+2. Polymorphism with Functions and Methods
+Here, different objects can be passed to a function, and the function behaves differently depending on the object type.
+
+🔧 Example 2: Shape, Rectangle, and Circle
+python
+Copy
+Edit
+class Shape:
+    def area(self):
+        print("Calculating area in the base class")
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+✅ Polymorphic function:
+
+python
+Copy
+Edit
+def print_area(shape):
+    print(f"The area is: {shape.area()}")
+
+rect = Rectangle(4, 5)
+circle = Circle(3)
+
+print_area(rect)     # Output: The area is: 20
+print_area(circle)   # Output: The area is: 28.26
+🔸 Polymorphism in Python vs Other Languages
+In Java or C#, polymorphism is achieved through interfaces. Python doesn't have formal interfaces but supports Abstract Base Classes (ABCs) using the abc module.
+
+🔸 Bonus: Abstract Classes & Interfaces in Python
+python
+Copy
+Edit
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"
+Here, Animal is an abstract base class.
+
+Any subclass must override the speak method to avoid errors.
+
+✅ Summary
+Concept	                Description
+Polymorphism	        Same interface (e.g., method name), different behaviors for different types
+Method Overriding	    Child class redefines a method from parent class
+Polymorphism via funcs	Pass different objects to the same function; it behaves based on the object
+Abstract Base Classes	Python’s way of defining "interfaces" using abc module

@@ -1,0 +1,158 @@
+What are Magic Methods in Python?
+Also known as dunder methods (short for “double underscore”).
+
+These are special methods that start and end with __ (e.g., __init__, __str__, __repr__).
+
+They allow you to define custom behavior for objects when they interact with built-in operations like:
+
+Object creation
+
+String representation
+
+Arithmetic operations
+
+Comparisons
+
+Commonly Used Magic Methods
+Method	Purpose
+__init__	Constructor method for initializing new objects
+__str__	Returns a user-friendly string representation of the object
+__repr__	Returns a developer-focused string (official string representation)
+
+Example Breakdown
+1. Basic Class Creation
+python
+Copy
+Edit
+class Person:
+    pass
+
+p = Person()
+print(dir(p))
+dir() shows all attributes, including default magic methods of the object.
+
+2. Using __init__
+python
+Copy
+Edit
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+Initializes the object with name and age.
+
+3. Using __str__ to Customize Print Output
+python
+Copy
+Edit
+def __str__(self):
+    return f"{self.name}, {self.age} years old"
+When print(obj) is called, __str__ is used to determine what gets printed.
+
+Example Output: Krish, 34 years old
+
+4. Using __repr__ for Developer Debugging
+python
+Copy
+Edit
+def __repr__(self):
+    return f"Person(name={self.name}, age={self.age})"
+Meant to provide a detailed or unambiguous representation of the object, typically for debugging.
+
+Takeaways
+Magic methods make your classes behave more like built-in types.
+
+They are powerful tools for customizing object behavior.
+
+You can override them to suit your application needs.
+
+Use __str__ for end-user readability and __repr__ for debugging or logs.
+
+
+Recommended Magic Methods to Explore
+__len__ – for using len(obj)
+
+__getitem__, __setitem__ – for indexing and slicing
+
+__eq__, __lt__, __gt__ – for comparisons
+
+__add__, __sub__, etc. – for arithmetic operations
+
+__call__ – to make an object callable like a function
+
+XX
+
+✅ Topic: Operator Overloading in Python
+🔹 Concept Recap
+Magic Methods (dunder methods): Methods with names like __add__, __eq__, etc., used to override built-in behavior of operators.
+
+Operator Overloading allows developers to customize operations (e.g., +, -, *, ==) for user-defined classes.
+
+🔹 Magic Methods Used for Operator Overloading
+Operator	Method Name	Purpose
++	__add__(self, other)	Defines behavior of +
+-	__sub__(self, other)	Defines behavior of -
+*	__mul__(self, other)	Defines behavior of *
+/	__truediv__(self, other)	Defines /
+==	__eq__(self, other)	Compares two objects
+>	__gt__(self, other)	Greater than
+<	__lt__(self, other)	Less than
+repr()	__repr__(self)	Returns string representation
+
+🔹 Example: Vector Class with Overloaded Operators
+Class Definition:
+python
+Copy
+Edit
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+
+    def __sub__(self, other):
+        return Vector(self.x - other.x, self.y - other.y)
+
+    def __mul__(self, other):
+        return Vector(self.x * other, self.y * other)
+
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+
+    def __repr__(self):
+        return f"Vector({self.x}, {self.y})"
+Usage:
+python
+Copy
+Edit
+v1 = Vector(2, 3)
+v2 = Vector(4, 5)
+
+print(v1 + v2)      # Vector(6, 8)
+print(v1 - v2)      # Vector(-2, -2)
+print(v1 * 3)       # Vector(6, 9)
+print(v1 == v2)     # False
+print(v1 == Vector(2, 3))  # True
+🔹 Key Takeaways
+Operator overloading enables writing clean, readable code for custom data types like vectors or complex numbers.
+
+It’s especially useful in mathematics, game development, simulations, and domain-specific applications.
+
+You can extend this concept to complex numbers, fractions, matrices, and more.
+
+📝 Suggested Assignment
+Try implementing a ComplexNumber class that supports:
+
+Addition (__add__)
+
+Subtraction (__sub__)
+
+Multiplication (__mul__)
+
+Division (__truediv__)
+
+Equality check (__eq__)
+
+String representation (__repr__)

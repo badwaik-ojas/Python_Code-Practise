@@ -1,0 +1,204 @@
+✅ Purpose of Exception Handling in Python
+Allows you to handle errors gracefully.
+
+Prevents program crashes by catching errors and providing informative responses.
+
+Enhances user experience by avoiding raw error messages.
+
+🧠 What Is an Exception?
+An event that disrupts the normal flow of the program when an error occurs during execution.
+
+Not the same as syntax errors; exceptions are runtime events.
+
+⚠️ Common Exception Types
+ZeroDivisionError: Division by zero.
+
+FileNotFoundError: File operations fail due to missing files.
+
+ValueError: Incorrect value passed.
+
+TypeError: Wrong type used in operation.
+
+NameError: Referencing undefined variables.
+
+🔑 Important Keywords in Exception Handling
+try: Contains code that may raise an exception.
+
+except: Catches and handles exceptions.
+
+else: Runs if no exception is raised.
+
+finally: Runs regardless of whether an exception occurred.
+
+🧪 Basic Exception Handling Example
+python
+Copy
+Edit
+try:
+    a = b  # 'b' is not defined
+except NameError:
+    print("The variable has not been assigned.")
+Output:
+
+nginx
+Copy
+Edit
+The variable has not been assigned.
+🎯 Catching Specific Exceptions
+python
+Copy
+Edit
+try:
+    a = b
+except NameError as e:
+    print(e)
+Output:
+
+pgsql
+Copy
+Edit
+name 'b' is not defined
+➗ Handling ZeroDivisionError Example
+python
+Copy
+Edit
+try:
+    result = 1 / 0
+except ZeroDivisionError as e:
+    print(e)
+    print("Please enter a denominator greater than zero.")
+Output:
+
+csharp
+Copy
+Edit
+division by zero
+Please enter a denominator greater than zero.
+🧱 Generic Exception Catching
+Use the base Exception class to catch all exceptions.
+
+python
+Copy
+Edit
+try:
+    a = b
+except Exception as e:
+    print(e)
+Important: Always place this after specific exceptions, as it catches all and can mask bugs if placed first.
+
+🧵 Multiple Except Blocks Example
+python
+Copy
+Edit
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ValueError:
+    print("Invalid input! Please enter a valid number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+except Exception as e:
+    print("An unexpected error occurred:", e)
+📌 Best Practices
+Handle known exceptions explicitly.
+
+Use Exception class for unexpected or generic exceptions.
+
+Provide clear and helpful messages to end-users.
+
+Use finally to clean up resources (e.g., closing files or connections).
+
+XX
+
+🔹 1. try and except Block
+Used to catch and handle runtime exceptions.
+
+Example:
+
+python
+Copy
+Edit
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+except ValueError:
+    print("Please enter a valid number.")
+except ZeroDivisionError:
+    print("You can't divide by zero.")
+If any exception occurs, the respective except block is executed.
+
+🔹 2. else Block
+Executed only if no exceptions occur in the try block.
+
+Good for logic that should only run when try succeeds.
+
+Example:
+
+python
+Copy
+Edit
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+except (ValueError, ZeroDivisionError) as e:
+    print(f"Error occurred: {e}")
+else:
+    print(f"The result is {result}")
+🔹 3. finally Block
+Runs no matter what (whether an exception occurs or not).
+
+Typically used to release resources like closing files or DB connections.
+
+Example:
+
+python
+Copy
+Edit
+try:
+    file = open("example1.txt", "r")
+    content = file.read()
+except FileNotFoundError:
+    print("File does not exist.")
+finally:
+    if 'file' in locals() and not file.closed:
+        file.close()
+        print("File closed.")
+🔹 4. Real-World Use Case for finally
+Suppose you're connecting to a database or opening a file:
+
+You must close the connection or file whether or not an error occurs.
+
+Use finally to ensure this cleanup always runs.
+
+🔹 5. Using locals() in finally
+locals() returns a dictionary of current local variables.
+
+if 'file' in locals() ensures we check for the variable's existence before using it, preventing a NameError.
+
+🔹 6. Parent Exception Handling
+Catching unknown or unanticipated errors:
+
+python
+Copy
+Edit
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+Always place general Exception last, after specific exceptions.
+
+🔹 7. Best Practices
+Handle specific exceptions first.
+
+Use else for logic that should only run on success.
+
+Use finally to clean up resources.
+
+Avoid leaving files open—always ensure closure using finally or with.
+
+✅ Final Takeaways:
+try: Wrap code that may cause exceptions.
+
+except: Handle expected errors.
+
+else: Run only when no exceptions occur.
+
+finally: Run always, for cleanup.
