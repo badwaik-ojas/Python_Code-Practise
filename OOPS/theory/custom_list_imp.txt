@@ -1,0 +1,197 @@
+What We're Building
+We're creating our own version of Python's list from scratch! Instead of using Python's built-in list, we're building one that works exactly the same way.
+Key Concepts
+1. Capacity vs Size
+Think of it like a parking lot:
+
+Capacity = Total parking spaces available (how many cars CAN park)
+Size = Cars currently parked (how many cars ARE parked)
+
+Example: Your parking lot has 4 spaces (capacity = 4), but only 2 cars are parked (size = 2).
+2. How Our Custom List Works
+Step 1: Initialize the List
+pythonclass CustomList:
+    def __init__(self):
+        self.capacity = 1      # Start with space for 1 item
+        self.size = 0          # Currently have 0 items
+        self.array = self._create_array(1)  # Create storage space
+Step 2: Adding Items (Append)
+When you add an item:
+
+Check if there's space: Is size < capacity?
+If no space: Double the capacity and copy everything over
+Add the item: Put it in the next available spot
+Update size: Increase the count of items
+
+pythondef append(self, item):
+    # If full, make more space
+    if self.size == self.capacity:
+        self._resize(2 * self.capacity)
+    
+    # Add item at the next empty spot
+    self.array[self.size] = item
+    self.size += 1
+Step 3: Removing Items (Pop)
+When you remove the last item:
+
+Check if empty: Can't remove from an empty list!
+Get the last item: Use size-1 as the index
+Decrease size: Reduce the count by 1
+Return the item: Give back what was removed
+
+pythondef pop(self):
+    if self.size == 0:
+        raise IndexError("pop from empty list")
+    
+    # Get the last item
+    item = self.array[self.size - 1]
+    self.size -= 1  # Reduce count
+    return item
+Real-World Example
+Let's say you're organizing books on a shelf:
+
+Start: You have a shelf with 1 slot, no books
+
+Capacity: 1, Size: 0
+
+
+Add "Book A":
+
+Put it in slot 0
+Capacity: 1, Size: 1
+
+
+Add "Book B":
+
+Shelf is full! Get a bigger shelf (2 slots)
+Copy "Book A" to new shelf
+Add "Book B" to slot 1
+Capacity: 2, Size: 2
+
+
+Remove a book (pop):
+
+Take "Book B" (the last one)
+Now you have just "Book A"
+Capacity: 2, Size: 1
+
+
+XX
+
+The most important concepts to remember are:
+
+Dynamic resizing: Lists grow automatically when they get full
+References: Lists store "pointers" to objects, not the objects themselves
+Efficiency: All this complexity exists to make lists fast and memory-efficient
+
+XX
+
+1. Indexing (Getting Items) - my_list[0]
+Problem:
+When you try my_list[0], Python doesn't know what to do with our custom list.
+Solution:
+Use the __getitem__ magic method that gets called automatically when you use square brackets.
+pythondef __getitem__(self, index):
+    # Check if index is valid
+    if 0 <= index < self.size:
+        return self.array[index]
+    else:
+        raise IndexError("invalid index")
+How it works:
+
+When you write my_list[2], Python calls my_list.__getitem__(2)
+We check if index 2 is valid (between 0 and size-1)
+If valid, return the item at that position
+If invalid, show an error
+
+
+2. Clear Method - my_list.clear()
+What it does:
+Empties the entire list, making it like a brand new empty list.
+How it works:
+pythondef clear(self):
+    self.size = 0  # Just reset the size to 0!
+The Smart Trick:
+
+We don't actually delete anything from memory
+We just tell the list "pretend you have 0 items"
+Since all our other methods use self.size, they'll act like the list is empty
+It's like closing your eyes and pretending the mess in your room disappeared!
+
+
+3. Insert Method - my_list.insert(index, item)
+What it does:
+Adds an item at a specific position, shifting everything else to the right.
+Example:
+Original list: [10, 20, 30, 40]
+my_list.insert(2, 99)
+Result:        [10, 20, 99, 30, 40]
+The Process:
+
+Make space if needed (resize if full)
+Shift elements to the right starting from the end
+Put the new item in the empty spot
+
+Visual Example:
+Step 1: Original
+[10, 20, 30, 40, ___]
+ 0   1   2   3   4
+
+Step 2: Shift right (starting from the end)
+[10, 20, 30, 30, 40]  # Copy 30 to position 3
+[10, 20, __, 30, 40]  # Now position 2 is free
+
+Step 3: Insert new item
+[10, 20, 99, 30, 40]  # Put 99 in position 2
+The Code Logic:
+pythondef insert(self, position, element):
+    # Check if we need more space
+    if self.size == self.capacity:
+        self._resize(2 * self.capacity)
+    
+    # Shift elements to the right
+    for index in range(self.size, position, -1):
+        self.array[index] = self.array[index - 1]
+    
+    # Insert the new element
+    self.array[position] = element
+    self.size += 1
+Why we loop backwards:
+
+We start from the end and work backwards
+This way we don't overwrite data we still need to copy
+Like moving books on a shelf - start from the right end!
+
+
+4. Remove Method - my_list.remove(item) (Your Assignment!)
+What it should do:
+Find the first occurrence of an item and remove it, shifting everything else to the left.
+Example:
+Original: [10, 20, 30, 20, 40]
+my_list.remove(20)
+Result:   [10, 30, 20, 40]  # Only first 20 is removed
+The Steps You Need:
+
+Find the item: Loop through the list to find where it is
+Shift left: Move all items after it one position to the left
+Decrease size: Reduce the size by 1
+
+Hint for the logic:
+pythondef remove(self, element):
+    # Step 1: Find the element
+    for i in range(self.size):
+        if self.array[i] == element:
+            # Step 2: Shift everything left
+            for j in range(i, self.size - 1):
+                self.array[j] = self.array[j + 1]
+            # Step 3: Decrease size
+            self.size -= 1
+            return  # Stop after removing first occurrence
+    
+    # If we get here, element wasn't found
+    raise ValueError("Element not found")
+
+Magic Methods Recap
+These special methods make your class behave like built-in Python types:
+MethodWhen it's calledWhat it does__init__()CustomList()Create new list__len__()len(my_list)Return length__str__()print(my_list)Show as string__getitem__()my_list[0]Get item by index
+

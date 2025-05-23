@@ -1,0 +1,84 @@
+🔸 Why Build Your Own List?
+Understanding internals of in-built structures helps:
+
+Improve debugging and optimization skills
+
+Build custom data structures in interviews and real-world applications
+
+OOP Background:
+
+Classes are like custom data types (e.g., Person, BankAccount)
+
+Lists can also be built using classes with custom functionality
+
+🔸 Limitations of Built-in Arrays (from array module or low-level languages like C)
+Fixed size: Cannot dynamically grow.
+
+Homogeneous elements only: All items must be of the same type (e.g., integers).
+
+This is because elements are stored by value, and memory is allocated based on data type size.
+
+🔸 How Python's list Overcomes This
+Python lists are essentially dynamic arrays. Here's how they work:
+
+1. Dynamic Resizing Behavior
+Lists in Python grow in size automatically.
+
+Behind the scenes:
+
+When capacity is exceeded, a new array of larger size is created.
+
+Existing elements are copied into the new array.
+
+Usually size is doubled or increased in chunks (e.g., 4, 8, 16…).
+
+Example Code:
+python
+Copy
+Edit
+import sys
+
+l1 = []
+print(f"Initial size: {sys.getsizeof(l1)} bytes")
+
+for i in range(17):
+    l1.append(i)
+    print(f"Appended {i}, size: {sys.getsizeof(l1)} bytes")
+Output Observation:
+Shows the dynamic growth pattern of a list (not always doubling but increasing as needed).
+
+2. Support for Heterogeneous Elements
+Python lists can store different data types (int, str, float, objects, etc.).
+
+Why? Because they store references (pointers) to objects, not the actual values.
+
+Example Code:
+python
+Copy
+Edit
+a = 1
+l1 = []
+l1.append(a)
+
+print(id(1))         # Memory address of literal 1
+print(id(a))         # Address where 'a' is pointing (same as above)
+print(id(l1[0]))     # Address stored in list (again same)
+Behavior:
+All IDs are the same ⇒ all point to the same memory location
+
+Changing a = 2 results in a pointing to a new address, but l1[0] still points to 1
+
+Key Concepts:
+Call by Value (C, C++): Stores the actual value directly
+
+Call by Reference (Python lists): Stores the address of the object
+
+Enables storing of elements with varying sizes/types
+
+🔸 Summary of Key Learnings
+Feature	Array (Low-Level)	Python List
+Size	Fixed	Dynamic
+Type Constraint	Homogeneous	Heterogeneous (any type)
+Storage	By Value	By Reference
+Flexibility	Limited	High
+Use Case	Memory-sensitive systems	General-purpose programming

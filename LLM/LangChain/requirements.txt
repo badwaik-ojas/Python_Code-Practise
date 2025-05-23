@@ -17,3 +17,8 @@ langchain_core
 wikipedia
 pinecone
 langchain_pinecone
+langchain_google_genai
+google-generativeai
+getpass
+IPython
+jupyterlab
