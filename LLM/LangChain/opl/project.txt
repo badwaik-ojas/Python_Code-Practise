@@ -1,0 +1,84 @@
+🧠 High-Level Concept
+GPT models can’t answer questions about:
+
+Recent events post their training cut-off.
+
+Private/internal documents not in the public domain.
+
+To overcome this, we use:
+
+Retrieval-Augmented Generation (RAG): Injecting external, relevant context at inference time.
+
+Embeddings: To convert chunks of documents and queries into vectors.
+
+Vector Databases: To store and retrieve document chunks by similarity.
+
+🛠️ The OPL Stack Overview
+Stack Component	Role
+OpenAI	Provides the LLM (GPT-4) and embedding model (text-embedding-3-small).
+Pinecone	Stores document chunks as vectors for semantic search.
+LangChain	Orchestrates the flow (load → embed → search → prompt → answer).
+
+📊 Pipeline Steps
+✅ Step 1: Document Ingestion & Embedding
+Load documents (e.g., PDFs).
+
+Split into chunks (e.g., 500–1000 tokens with some overlap).
+
+Generate embeddings for each chunk using OpenAI embedding models.
+
+Store the chunks + vectors in Pinecone.
+
+✅ Step 2: Query Processing
+User enters a question.
+
+Embed the query using the same model.
+
+Retrieve similar chunks from Pinecone using cosine similarity.
+
+Rank and filter top-k results.
+
+✅ Step 3: Prompt Injection + Answer
+Insert the query and retrieved chunks into a structured prompt.
+
+Send the full message to GPT-4.
+
+Return the answer.
+
+🧠 Example Prompt to LLM
+txt
+Copy
+Edit
+You are a helpful assistant. Use the following context to answer the question.
+
+Context:
+<chunk1>
+<chunk2>
+...
+
+Question:
+What is reasoning and acting in LLMs?
+🧪 Real-World Application Domains
+Domain	Example Use
+Medical	Pathology Q&A system
+Legal	Internal document explorer
+Finance	Audit report analyzer
+Corporate Knowledge	Employee handbook bot
+Education	Course material tutor
+
+🧱 Key LangChain Modules You'll Use
+Module	Purpose
+DocumentLoader	Load data (PDF, DOCX, etc.)
+TextSplitter	Chunk long documents
+OpenAIEmbeddings	Create vectors
+PineconeVectorStore	Store/retrieve embeddings
+RetrievalQA	The end-to-end QA chain
+
+📚 Definitions
+Embedding: Turning text into numerical vectors so similarity can be computed.
+
+Vector DB: A database optimized for similarity search on vector data.
+
+Chunking: Breaking long documents into smaller, independently meaningful parts.
+
+RAG (Retrieval-Augmented Generation): Combining retrieval and generation to enhance model outputs.

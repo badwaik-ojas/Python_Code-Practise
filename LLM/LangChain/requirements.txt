@@ -22,3 +22,5 @@ google-generativeai
 getpass
 IPython
 jupyterlab
+huggingface-hub
+diffusers
