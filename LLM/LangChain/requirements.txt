@@ -24,3 +24,5 @@ IPython
 jupyterlab
 huggingface-hub
 diffusers
+chromadb
+langchain_chroma
