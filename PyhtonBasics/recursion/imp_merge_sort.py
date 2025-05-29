@@ -55,4 +55,3 @@ def sort(arr, s, mid, e):
 arr = [12, 1, 34, 22, 22, 45, 7]
 merge_sort(arr)
 print(arr)
-

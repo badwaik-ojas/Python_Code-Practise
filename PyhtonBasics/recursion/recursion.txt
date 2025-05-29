@@ -269,3 +269,12 @@ Base Cases Are Important
 
 Always identify and mark your base cases clearly
 These are where the "returning" starts
+
+XXX
+
+Make a mind set to solve recursion
+
+its like 
+    - always have a base condition to escape
+    - imagine how it should end and start working it from there
+    
