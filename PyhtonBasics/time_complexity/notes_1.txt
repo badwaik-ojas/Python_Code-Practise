@@ -1,0 +1,77 @@
+📚 Time Complexity – Intuitive Understanding (Using Bubble Sort)
+✅ Goals of Time Complexity Analysis
+Analyze performance when input is very large.
+
+Small input sizes don’t matter in real-world performance.
+
+We only care about the trend as input grows.
+
+Focus on the worst-case input.
+
+Time complexity is calculated for the worst-case scenario unless specified otherwise.
+
+Look at the largest (dominant) factor in the expression.
+
+Lower order terms and constants become negligible for large n.
+
+📊 Visualizing Time Complexity with Bubble Sort
+💡 Example: Time taken by Bubble Sort
+Bubble Sort has time complexity close to:
+T(n) = n² + n
+
+For very large n, the n² term dominates:
+
+n = 1 billion:
+
+n² = 10¹⁸, n = 10⁹ → n becomes negligible.
+
+So, we focus only on the highest degree term:
+Time Complexity = O(n²)
+
+🧠 Why Do We Ignore Smaller Terms and Constants?
+Compare:
+n²
+
+n² + n
+
+n² + 100n
+
+As n increases:
+
+Graph of all three becomes almost the same.
+
+n² always dominates.
+
+Example:
+
+n = 10,000
+
+n² = 10⁸
+
+100n = 10⁶ → negligible compared to 10⁸
+
+Analogy:
+Your friends are waiting for one late person.
+If one is 5 mins late and another is 5 hours late — you'll always be delayed by the 5-hour guy.
+The others don’t matter.
+
+🧪 Time Complexity is About Number of Operations — Not Actual Time
+Actual time depends on:
+
+Machine
+
+Language
+
+Compiler
+
+We only care about number of fundamental operations:
+
+Comparisons
+
+Additions, etc.
+
+✍️ Key Takeaways
+Principle	Meaning
+We talk in terms of operations, not seconds	Ignore machine-specific timing
+Focus on highest degree term	Ignore constants and smaller terms
+Don't care about exact number, only the order of growth	Helps us compare algorithms

@@ -1,0 +1,73 @@
+🧠 Topic: Asymptotic Analysis and Notations
+🎯 Goal of Asymptotic Analysis
+To measure the efficiency of an algorithm (mainly time complexity).
+
+Without depending on:
+
+Machine-specific factors (hardware, OS, etc.)
+
+Actual implementation of the algorithm.
+
+It helps us compare algorithms mathematically based on how they grow with input size, not exact timings.
+
+📏 What It Measures
+We are not interested in:
+
+Exact time taken (in seconds or milliseconds).
+
+We are interested in:
+
+Order of growth of operations based on input size n:
+
+Linear?
+
+Quadratic?
+
+Logarithmic?
+
+etc.
+
+🧮 Asymptotic Notations
+There are 3 major notations:
+
+1. 🅾️ Big-O Notation (O) – Worst Case
+Describes the maximum time or upper bound the algorithm will take.
+
+Most commonly used in interviews and analysis.
+
+✅ Example:
+A runner says: "No matter what, I won’t take more than 10 minutes to finish 100m."
+
+For an algorithm: "No matter what input, it won’t take more than O(n) time."
+If n = 100, then it may take up to 100 steps. If n = 1000, then up to 1000 steps.
+
+2. 🅱️ Omega Notation (Ω) – Best Case
+Describes the minimum time or lower bound the algorithm will take.
+
+Used when analyzing best-case performance.
+
+✅ Example:
+A runner says: "I can complete 100m in at least 10 seconds if everything is perfect."
+
+For an algorithm like Insertion Sort, if you give it a sorted array, it can finish in Ω(n) time.
+
+But Bubble Sort might still need O(n²) time even for sorted input.
+
+3. 🅿️ Theta Notation (Θ) – Average Case
+Describes the average time or tight bound: both upper and lower bounds are the same.
+
+✅ Example:
+A runner says: "On average, I finish 100m in 5 minutes."
+
+For an algorithm: "On average input, I will take Θ(n log n) steps."
+
+💡 Why These Notations?
+Helps predict how an algorithm will behave as input grows.
+
+Let’s compare algorithms fairly without running them on every possible input or every possible machine.
+
+📝 Summary Table
+Notation	Case	Description	Example Analogy
+O	Worst	Maximum time taken	Max 10 mins to run 100m
+Ω	Best	Minimum time taken	Min 10 secs to run 100m
+Θ	Average	Average time taken	Avg 5 mins to run 100m

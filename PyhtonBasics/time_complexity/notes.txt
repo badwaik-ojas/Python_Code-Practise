@@ -1,0 +1,128 @@
+📘 What is Time Complexity?
+Time complexity measures how the running time of an algorithm increases with the input size (n).
+
+It’s a function of input size that tells us how efficient an algorithm is.
+
+You’ll often be asked in interviews:
+
+What is the time complexity of your code?
+
+Can you improve the time complexity?
+
+🔍 Why Time Complexity Matters
+If you write an algorithm, say algo(n), you want to know:
+
+How long will it take to run for size n?
+
+How does time grow as n increases?
+
+Input size (n) is the major factor affecting time.
+
+⏱️ Experimental Analysis Approach
+“Why not just run the code and measure how long it takes?”
+
+✔️ What we do:
+Use Python's time module to record start and end times.
+
+Run sorting algorithms like Merge Sort and Bubble Sort on inputs of increasing sizes:
+
+n = 10, 100, 1000, ..., 10⁶
+
+🔁 Repeat for:
+Merge Sort (fast)
+
+Bubble Sort (slow on large inputs)
+
+🧪 Results: What We Observed
+For small n, both are fast.
+
+For large n:
+
+Merge Sort remains efficient.
+
+Bubble Sort slows down drastically.
+
+This is called Experimental Analysis: measuring real runtime to compare algorithms.
+
+❌ Problems with Experimental Analysis
+1. Different results on different machines
+A slow PC might make fast algorithms look slow.
+
+Real runtime depends on:
+
+CPU speed
+
+Background processes
+
+System load
+
+2. Small code changes affect runtime
+Even tiny differences in implementation can change timing.
+
+3. We don’t get a relationship
+You get raw times but not a formula or complexity class (like O(n log n)).
+
+4. Test case generation is tricky
+Some inputs are easier for some algorithms.
+
+Eg: Insertion Sort is fast on sorted arrays.
+
+You need neutral or worst-case inputs.
+
+5. Too many implementations
+You can’t test all possible versions of an algorithm.
+
+6. Large inputs are time-consuming
+Waiting for results from slow algorithms (like Bubble Sort on 10⁶ items) wastes time.
+
+🧠 Why Time Complexity ≠ Time Taken
+Important Takeaway:
+"Time Complexity is NOT equal to time taken."
+
+Why?
+Time taken varies with:
+
+Machine specs
+
+Language used
+
+Code changes
+
+Other system processes
+
+Time Complexity is about how time grows with input size, not the exact seconds or milliseconds.
+
+📈 What Time Complexity Really Tells Us
+You just want to see the trend:
+
+Does time double when n doubles?
+
+Does it grow linearly? Quadratically? Logarithmically?
+
+So we plot:
+
+Input size vs Time taken
+
+And observe the growth pattern, not the exact time.
+
+✅ Why We Focus on Worst Case
+Always analyze the worst-case time complexity:
+
+Eg: Linear search where element is at the end.
+
+Eg: Sorting a completely unsorted array.
+
+Best-case performance is unreliable for real-world use.
+
+Worst-case tells us how bad it can get.
+
+🔚 Conclusion
+Experimental Analysis is helpful, but not reliable for determining time complexity.
+
+It shows performance trends, not actual complexity.
+
+Theoretical Analysis (which we’ll learn next) is more accurate and scalable.
+
+Always aim to understand:
+
+How time grows with input, not the raw time.

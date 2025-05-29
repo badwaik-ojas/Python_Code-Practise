@@ -277,4 +277,11 @@ Make a mind set to solve recursion
 its like 
     - always have a base condition to escape
     - imagine how it should end and start working it from there
-    
+    - when working with recursion with string type problem, don't go into details just focus of bigger problem. what needs to be done and write the code that should work.
+
+Real-World Analogy
+    Think of function calls like opening tabs in a browser:
+    You open one, it opens another, and another… until you reach the deepest one.
+    Once you start closing them (returning), you reuse the space.
+    So at no time are all tabs (calls) open together—only the deepest level matters.
+
