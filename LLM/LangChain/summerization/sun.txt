@@ -1,0 +1,514 @@
+Many scientific instruments are designed to detect infrared, ultraviolet, X-ray, or other
+wavelengths. These invisible forms of light have no colors associated with them. So
+scientists have their computers assign unusual colors (like neon orange) to their images,
+to allow them to observe details. The green Sun, above left, is a photo of the Sun taken in
+extreme ultraviolet light, which our eyes cannot see. The scientists have artificially
+colored the ultraviolet data green. We call that “false color”.
+Scientists also use false color to indicate additional information. The image of Mars,
+above right, shows the concentration of methane in Mars’s atmosphere. Scientists have
+color-coded the highest concentrations of methane as red, the lowest in blue, to help us
+and them understand the data. Many of the images in this collection are likewise false
+colored. We have tried to highlight which images come from visible light and which
+represent false color or color-coded data.
+Image Credits: Green Sun NASA/SDO/AIA; Blue Mars – NASA/JPL
+Our Sun
+5
+Our Sun – Source of Life
+A total solar eclipse, as observed from Earth.
+Image Credit: Alphonse Sterling and the Suntrek website (www.suntrek.org)
+Used with permission
+The Sun is our very own star, at the center of our solar system. The Sun is scientifically
+designated as a yellow dwarf (because of its place on the HR diagram1). However, our Sun
+is neither yellow nor a dwarf. The Sun appears white to the human eye -- it only looks
+yellow or orange when its rays are being scattered by Earth’s atmosphere during sunrise
+and sunset. And it is now thought to be brighter and larger than about 85% of the stars in
+the Milky Way galaxy, most of which are red dwarfs (stars with low mass that shine in a
+relatively cool red).
+The Sun consists of hot plasma (a state of matter where electrons have been stripped from
+their atoms) interwoven with magnetic fields. It has a diameter about 109 times that of
+of Earth, and a million Earths could fit inside it! Its mass accounts for about 99.86% of the
+total mass of the solar system. About three-quarters of the Sun consists of hydrogen; the
+rest is mostly helium. Less than 2% consists of heavier elements, including oxygen,
+carbon, gold, iron, and others. Many of these elements were originally forged in supernova
+explosions. So we, and everything in our solar system, are made of “star stuff”2.
+Every second, the Sun fuses 614 million metric tons of hydrogen into 609 metric tons of
+helium in its core. The difference is converted into gamma rays that eventually get
+1 The Hertzsprung-Russell diagram plots the temperature of stars against their luminosity/brightness. See
+https://astronomy.swin.edu.au/cosmos/H/Hertzsprung-Russell+Diagram
+2 Quote from Carl Sagan
+Our Solar System
+6
+radiated at the solar surface as lower-energy
+photons, primarily visible light. The Sun's
+hot atmosphere, called the corona, continuously
+expands in space creating the solar wind, a stream of
+charged particles that extends beyond the solar
+system. The bubble in the interstellar
+medium formed by the solar wind, called
+the heliosphere, is the largest continuous structure in
+the solar system.
+Image Credit: ESA/ NASA’s SOHO Mission (false color)
+Solar Activity
+Our Sun is a dynamic, active, and constantly changing star. Solar activity is driven by
+intense magnetic fields, generated deep within the solar interior then buoyantly rising up
+through its surface. Plasma caught in the magnetic field lines allows us to see these fields,
+as in the previous composite image.
+Visible light image of the Sun
+Image credit: NASA SDO/HMI
+Solar magnetic fields
+Image Credit: NASA SDO/HMI
+On the left is a true color image of the Sun. The dark splotches are called sunspots. The
+image on the right, taken at the same time, is a map of the magnetic fields on the Sun.
+White indicates a positive field, and black a negative one (grey indicates little or no field).
+Note how the sunspots are associated with the magnetic fields – most activity on the Sun
+is a result of complex magnetic fields!
+Our Sun
+7
+Image credit: Jack Newton (false color)
+Image Credit: Scharmer and K. Langhans, ISP Royal
+Swedish Academy of Sciences. (false color)
+Sunspots are temporary regions of reduced surface temperature caused by increased
+magnetic activity. The Sun goes through a cycle of about 11 years when it has a period of
+many sunspots (solar maximum), then few or no sunspots (solar minimum). Sunspots or
+similar magnetically active regions are the source of solar storms.
+The Sun’s magnetic fields are constantly in
+motion. When solar magnetic fields twist,
+break, and then reconnect, they can release
+a tremendous amount of energy. We see
+these as solar flares, like the white
+brightening near the center of the image on
+the right. Solar flares eject radiation and
+fast moving particles that can damage
+satellites, disrupt communications, and
+give high-flying planes and astronauts
+additional doses of radiation. Finding ways
+to protect astronauts from solar flares is
+one of the biggest challenges of going back
+to the Moon or to Mars.
+Image Credit: NASA/SDO (false color)
+Our Solar System
+8
+ESA3/NASA’s Solar and Heliospheric
+Observatory (SOHO) produced the
+spectacular portrait (left) of our star. Featured
+is a huge, handle-shaped prominence—a
+cloud of relatively cooler plasma held aloft
+high in the corona (the Sun’s atmosphere) by
+a large magnetic field that is rooted in the
+solar surface. A typical prominence extends
+over thousands of kilometers, and can last
+from minutes to months.
+Image Credit: ESA/NASA’s SOHO spacecraft (false colors)
+Sometimes prominences erupt into coronal mass
+ejections (CMEs), as in the image on the right. These
+huge blasts of charged plasma, traveling at 1400
+km/s, can impact objects of the solar system. Luckily,
+Earth’s magnetic field acts as a shield, partially
+protecting us. But CME impacts on Earth may still
+generate effects such as aurora, satellite drag, power
+outages, communications disruptions, and GPS
+interference.
+Image Credit: NASA/SDO/AIA (false colors)
+Image Credits: NASA/Stanford-Lockheed Institute for Space Research’s TRACE Team (false color)
+A close-up view of the Sun's surface, observed by NASA’s Transition Region and
+Coronal Explorer (TRACE) mission, shows vast loop structures made of superheated
+plasma trapped in magnetic field lines. About 10 Earths could fit across any one of these
+loops! These areas of solar activity can contain multiple loops, often in “tunnel”
+3 The European Space Agency
+Our Sun
+9
+formations, that can persist for weeks. The plasma reaches temperatures of more than
+1,000,000 C° — whereas the Sun’s surface temperature averages only about 5500 C°!
+Flares and CMEs usually erupt from active regions such as these.
+Space Weather
+Image Credits: NASA (Definitely not to scale!)
+Space weather refers to the affect the Sun has on the Earth and rest of the solar system.
+The solar wind is a fairly constant stream of charged particles, mostly high-energy
+electrons and protons, ejected from the upper atmosphere of the Sun. These particles can
+escape the Sun's gravity because of their high kinetic energy and the high temperature of
+the corona. As the solar wind buffets the Earth’s magnetic field, it distorts it into a long
+oval, as shown in the (not-to-scale) image above.
+Radiation storms and CMEs have the potential to seriously affect Earth and our modern
+technology. Besides triggering beautiful aurorae, these solar storms can damage
+satellites, disrupt power grids and electrical systems, interfere with cell phones and other
+communications, and disturb animal movements. They can even threaten astronauts and
+high-flying airplanes with their radiation! Space weather affects not only Earth but the
+other planets as well.
+Our Eye on the Sky – Launched in February
+2010, NASA’s Solar Dynamics Observatory
+(SDO) mission is designed to study the Sun’s
+variability and its effect on space weather, with
+the goal of eventually predicting dangerous
+solar activity.
+NASA’s SDO spacecraft
+Our Solar System
+10
+Composite image taken by AIA instruments aboard NASA’s
+SDO spacecraft (false colors)
+Our Sun was formed in a nebula of gas
+and dust about 4.5 billion years ago. It
+will shine for another 5 billion years
+before it expands into a red giant,
+eventually releasing what is left of its
+gas, and spending the last of its years as
+a dwindling white dwarf.
+Image credits: Red giant by B. Jacobs, from Wiki Commons;
+White dwarf - NASA
+Sun Details
+Diameter 1,391,000 km Rotational
+Period
+~27 days at equator;
+more at poles
+Temperature Core: ~1.5×107C°
+Photosphere: 5,500C°
+Corona: ~5×106C°
+Atmosphere 85% Hydrogen
+23% Helium
+2% Others
+Number of planets 8 Axial Tilt 7.5 degrees
+Mass 2×1030 kilograms Magnetic Field Dipole plus surface
+and subsurface fields
+Our Sun
+11
+Mercury
+Land of Craters
+Image Credit: NASA
+Mercury is extreme. Of all the planets in our
+solar system, it is the smallest, it has the
+oldest surface, it is closest to the Sun, it has
+the largest daily variations in surface
+temperature, and, until recently it was the
+least explored. NASA’s Mercury Surface,
+Space Environment, Geochemistry, and
+Ranging (MESSENGER) spacecraft, which
+inserted into Mercury orbit in March 2011
+has changed all that! It has revealed rocky
+Mercury’s geologic history, the nature of its
+weak magnetic field, the structure of its
+core, and the composition of its thin
+exosphere. MESSENGER has even found
+hints of water at Mercury’s dark poles.
+Image Credit: NASA/Johns Hopkins University Applied Physics
+Laboratory/Carnegie Institution of Washington
+Image Credit: NASA
+What is the source of the radiating streaks in the image on the left? It is the impact crater
+Hokusai, seen at the top of the frame, named for Japanese artist Katsushika Hokusai. Its
+impressive ray system extends for as far as 1000km. Such rays are formed when an impact
+excavates material from beneath the surface and explodes it outward from the crater. Rays
+such as these fade over time as they are exposed to the harsh space environment. Hence,
+craters with bright rays are thought to be relatively young.
+Above right: At a diameter of 100km, the crater Atget is one of the largest craters within the
+Caloris Basin (see next image).
+Our Solar System
+12
+Image Credit: NASA/Johns Hopkins University Applied Physics
+Laboratory/Arizona State University/Carnegie Institution of
+Washington
+(false colors)
+The image on the left features the sprawling
+Caloris basin, one of the solar system's
+largest impact basins. Created during the
+early history of the solar system by the
+impact of a large asteroid-sized body, the
+basin spans about 1500 kilometers and is
+seen in yellowish hues in this enhanced
+color mosaic. The image data is from the
+January 14th flyby of the MESSENGER
+spacecraft. Orange splotches around the
+basin's perimeter are now thought to be
+volcanic vents, new evidence that Mercury's
+smooth plains are indeed lava flows.
+Scientists often add false color to images to
+help them see finer detail. Note how much
+easier it is to study this image rather than
+the ones on the previous page.
+The image below shows the transit
+(crossing) of Mercury in front of the Sun’s
+disk on 8 November 2006. (Mercury is
+about 57 million km away from the Sun.)
+Mercury Details
+Diameter 4879 km Rotational Period 59 days
+Distance from Sun 57,910,000 km (.4 AU) Orbital Period 88 days
+Number Moons 0 Atmosphere tenuous
+Temperature -160C° to 430C° Axial Tilt .04 degrees
+Mass 3.30 x 1023kg
+About 5% of Earth’s
+Magnetic Field tiny
+Venus
+13
+Venus
+Heaven or Hell?
+Image Credit: NASA (true color)
+Image Credit: NASA/JPL-Caltech (false color)
+Venus, second planet from the Sun, has roughly the same size, mass, density, and
+composition as Earth. Until the 1960s, scientists and science fiction writers speculated that
+Venus might be very Earth-like, and home to lush, tropical forests. That view changed when
+new observations confirmed a superheated surface with temperatures over 400C and
+atmospheric pressures nearly a hundred times that of Earth. But the biggest difference from
+Earth lies within Venus’s atmosphere. The clouds on Venus, which hide its surface, are
+made not of water like they are on Earth, but rather of concentrated sulfuric acid—
+essentially battery acid. About 700 million years ago, just before life was diversifying on
+Earth, Venus experienced tremendous volcanic activity, flooding the surface with new lava
+and filling the atmosphere with greenhouse gases, causing a runaway greenhouse effect.
+Volcanoes continue to erupt on Venus.
+Only radar can probe through the thick clouds in the Venusian atmosphere to make
+observations of the surface. Radar data collected over many years from multiple sources
+were used to create the beautiful, color-coded portrait of Venus’s surface, above right.
+This striking image, right, is
+a composite of the complete
+radar image collection of
+Venus’s surface, obtained
+by NASA’s Magellan
+mission. The image uses
+simulated colors based on
+actual color images recorded
+by the Soviet Venera 13 and
+14 spacecraft.
+Image Credit: NASA/JPL-Caltech
+The Magellan spacecraft was launched aboard Space Shuttle Atlantis in May 1989 and
+Our Solar System
+14
+began mapping the surface of Venus in September 1990. Magellan spacecraft operations
+ended on October 12, 1994, when radio contact was lost with the spacecraft during its
+controlled descent into the deeper portions of the Venusian atmosphere.
+Impact craters on Venus - Image credit: NASA/JPL
+Was there life on Venus? There is evidence that when it was young, Venus almost
+certainly had liquid water—an essential ingredient for life on Earth. Was Venus habitable in
+the past? Is it habitable now? Finding evidence of past life will be a big challenge, as
+massive volcanic activity caused a resurfacing of 80% of the planet within the last billion
+years. But if samples are someday returned from the ancient surface of Venus, they could be
+very revealing!
+As for life on Venus now, some scientists speculate that single-celled organisms could
+actually survive within the harsh yet stable atmosphere, living off the sulfur chemistry there!
+Venus Details
+Diameter 12,104 km Rotational Period 243 days (clockwise)
+Distance from Sun 108,200,000 km (.7 AU) Orbital Period 225 days
+Number Moons 0 Atmosphere Thick sulfuric clouds
+Temperature 480C° Axial Tilt 177 degrees (retrograde)
+Mass 4.868×1024 kg
+About 82% of Earth’s
+Magnetic Field Nearly none
+Our Sun
+15
+Earth
+You are here!
+Image Credits: NASA/NOAA/GSFC/Suomi NPP/VIIRS/Norman Kuring
+Home. These beautiful images are each composites of six separate orbits taken on Jan.
+23, 2012 by the Suomi National Polar-orbiting Partnership satellite. Compiled by NASA
+Goddard scientist Norman Kuring, the images have the perspective of a viewer looking
+down from 12,742km (7,918 miles) above the Earth's surface.
+In December of 1968, the Apollo 8 crew flew from the Earth to the Moon and back again.
+Frank Borman, James Lovell, and William Anders were launched atop a Saturn V rocket,
+circled the Moon ten times in their command module, and returned to Earth on December
+27. As the Apollo 8 command module rounded the farside of the Moon, the crew could
+look toward the lunar horizon and see the Earth appear to rise. The famous picture that
+resulted, below left, shows a distant blue Earth above the Moon's limb, and was a
+marvelous gift to the world.
+Image credits: NASA
+Our Solar System
+16
+Image Credit: Jeffrey R. Hapeman of Lac du Flambeau, Wis. Diagram courtesy of NASA
+For those who have seen them, the Aurora Borealis and Aurora Australis are spectacles to
+remember. Aurorae are caused by currents of energetic charged particles in Earth's
+magnetosphere flowing through the upper atmosphere. The interaction of the solar wind
+with Earth's magnetosphere drives these currents. The more active the Sun, especially
+during the peak of its 11-year solar cycle, the more charged particles flow to Earth’s
+magnetic poles. These charged particles eventually collide with gas molecules in the
+upper atmosphere, causing them to ionize (lose electrons) and emit colored light.
+Earth’s thin atmosphere is all that
+stands between life on Earth and
+the cold, dark void of space. Our
+planet's atmosphere has no clearly
+defined upper boundary but
+gradually thins out into space.
+The layers of the atmosphere have
+different characteristics, such as
+protective ozone in the
+stratosphere and weather in the
+lowermost layer. The setting Sun
+seen through Earth’s atmosphere
+is featured in this image, which
+was photographed by the crew of
+the International Space Station in
+2008.
+Image credit: NASA
+Earth Details
+Diameter 12,742 km Rotational Period ~24 hours
+Distance from Sun 149,600,000 km (1.0 AU) Orbital Period ~365.25 days
+Number Moons 1 Atmosphere Nitrogen, oxygen
+Temperature -89C° to 70C° Axial Tilt 23.4 degrees
+Mass 6 × 1024 kg Magnetic Field yes
+Earth
+17
+Earth’s Moon
+Image Credit: NASA
+ONE SMALL STEP FOR MAN…one giant leap for mankind! There is only one world in
+our solar system besides Earth on which humans have walked—the Moon. The image
+above was taken by astronauts on the Moon during the Apollo 17 mission in December
+1972. Astronaut Harrison Schmitt is shown preparing to take a soil sample. The later
+Apollo missions, including 17, had a strong scientific focus. A few days after this image
+was taken, humanity left the Moon and has yet to return. Note the Sun in the upper left. It
+is daytime on the Moon, but with no air to scatter the light, the sky remains black.
+Side of the Moon facing Earth
+Image Credit: NASA/JPL/Galileo Spacecraft
+Far Side of the Moon
+Image credit: NASA
+Virtually everyone can see the Moon, no matter where on Earth they are. Most people
+know that the Moon’s gravitational pull on the Earth causes our ocean tides. But did you
+know that missions to the Moon have discovered the existence of Moonquakes, as well as
+water ice hidden in the permanently shadowed craters at the lunar poles?
+The lunar samples brought back by Apollo astronauts have shed new light on how the
+Moon was formed—it is now thought that roughly 4.5 billion years ago, a rocky impactor
+about the size of Mars hit the young Earth. The debris scattered by that collision orbited
+the Earth briefly (only about a month!) before coalescing into the Moon. The Moon was
+further struck by a heavy bombardment of asteroids around 3.9 billion years ago, causing
+much of the cratering now seen. The dark blotches on the Earth-facing side of the Moon
+are lunar mare, essentially large, dark plains of basalt formed by volcanic eruptions.
+Our Solar System
+18
+Image Credit Akira Fujii/Ciel et Espace
+Why does the Moon have a reddish
+hue in these images of a lunar eclipse?
+It is the same reason that the Sun
+appears reddish during a sunset:
+scattered light. During a lunar eclipse,
+the Earth is situated directly between
+the Sun and the Moon. The only
+sunlight reaching the Moon travels
+through dense layers of Earth's
+atmosphere. Atmospheric particles
+preferentially scatter out shorter
+(bluer) wavelengths leaving only the
+longer (redder) wavelengths to refract
+(bend) through the atmosphere and
+illuminate the Moon.
+Meteors and Impacts
+Image Credit: Wally Pacholka/AstroPics.com
+The meteor fireball on the left, caused
+by a Geminid meteor, is one of the
+largest ever recorded. Most meteor
+showers result from debris that “boils”
+off a comet when it passes close to the
+Sun. When Earth passes through the
+debris, these specks may enter our
+atmosphere and we see a meteor
+shower!
+Though most particles which cause our
+brilliant meteors are about the size of a grain of sand, the Geminids are different. Their
+source of meteors is not a comet, but a strange, rocky object thought to be either an
+asteroid or an extinct or dormant comet.
+Meteors that are larger than a grain of sand (often chunks from asteroids) can sometimes
+reach the Earth’s surface, as did the rock on the left image below. This one landed in the
+Sudan desert. Meteors that make it to the ground are called meteorites; large ones can
+leave impact craters (2 images below right).
+Image Credit: NASA/JPL
+Our Sun
+19
+Mars
+The Red Planet
+Image Credit: NASA/Mars Global Surveyor
+Mars has been the subject of intense study
+for centuries. Its exploration has been
+wrought with success and failure, and has
+witnessed a dramatic evolution in
+knowledge. Speculations about the famous
+“irrigation canals” on Mars in the late
+1800s were finally put to rest by images
+returned from NASA’s Mariner 4 mission
+in 1965. Revealing icy deserts, impact
+craters and a barren landscape, they
+dispelled thoughts of thriving, agricultural
+civilizations. In the 1970s NASA’s Viking
+mission carried out life-detection
+experiments on the surface. The results,
+suggesting a lifeless planet, raised more
+questions than answers.
+The next two decades were met with struggle as several spacecraft from the US, Japan,
+Europe, and former USSR were lost. Success resurfaced in the late 1990s with the ESA
+orbiter Mars Express and NASA’s Pathfinder rover, and Global Surveyor and Odyssey
+orbiters—heralding the mantra “Follow the Water.” In 2004, NASA’s twin rovers Spirit
+and Opportunity began work. NASA’s Mars Reconnaissance Orbiter and Phoenix lander
+followed. As data from these robotic explorers piled up, so did evidence that Mars
+preserves a record of surface liquid water and possibly once-habitable environments.
+NASA’s Mars Science Laboratory, which arrived in 2012, carried an unprecedented suite
+of instruments that can bring us one step closer to determining if life ever started on
+Mars. Its Curiosity rover is now offering a human-like perspective to martian landscapes.
+ESA's Mars Express obtained this view
+of an unnamed impact crater located on
+Vastitas Borealis, a broad plain that
+covers much of Mars's far northern
+latitudes. The circular patch of bright
+material is residual water ice. The
+colors are very close to natural, but the
+vertical relief has been exaggerated
+three times. This patch of ice is present
+all year, remaining after frozen carbon
+dioxide overlaying it disappears during
+the martian summer.
+Image Credit: ESA/DLR/FU Berlin (G. Neukum)
+Our Solar System
+20
+Image Credit: NASA/JPL/University of Arizona/Science
+Photo Library
+NASA’s Mars Reconnaissance Orbiter spacecraft
+took this spectacular image of Victoria
+Crater, an impact crater near the equator of Mars
+where hematite mineral deposits suggest Mars
+had a wet past. Layered sedimentary rocks are
+exposed along the inner wall of the crater, and
+the floor of the crater is occupied by a striking
+field of sand dunes. NASA’s twin Mars
+Exploration Rovers, Spirit and Opportunity, have
+been operating on the surface of Mars in search
+of answers about the history of water on the Red
+Planet since 2004 (unfortunately, Spirit was
+turned off). Five days before this image was
+taken in September 2006, the ‘Opportunity’
+rover arrived at the rim of Victoria Crater, after a
+drive of more than 9km! It explored within the
+crater, staying at the site for about a year. The
+rover can actually be seen in this image as a
+small dot at the ‘ten o'clock’ position along the
+crater rim.
+Image Credit: NASA/JPL-Caltech/Arizona State University, Thermal Emission Imaging System (THEMIS)
+Chasma Boreale, pictured above, is a long valley that cuts deep into the north polar ice
+cap of Mars. Where the ice cap has retreated, sand from earlier, less icy climatic regimes
+is exposed. Winds have shaped them into dunes. In 2007, NASA’s Phoenix mission
+landed in the northern arctic plains of Mars to study the history of water and potential
+habitability in the ice-rich soil. Phoenix verified the presence of water ice in the martian
+sub-surface, and found calcium carbonate, an indicator of a less acidic (more potentially
+habitable) planet in the past. Phoenix even observed snow falling from clouds in the
+martian atmosphere! This eerily Earth-like vista was made by combining data from
+NASA's Mars Odyssey and Global Surveyor orbiters.
+Mars
+21
+Image Credit: NASA/JPL-Caltech/University of Arizona
+Image Credit: NASA
+The intriguing image on the left depicts the Nili Fossae region of Mars, which occupies
+an area between a large volcano and an ancient impact basin. It is home to a collection of
+curved troughs cutting about 500m into the crust. The European spacecraft Mars Express
+detected clay minerals there, good news for astrobiologists because the clays suggest the
+presence of water at some point in the past. Even better, the minerals also suggest that the
+water collected in pools on the surface, a possibly comfortable habitat for life.
+Signs of water on Mars, above right, were discovered some time ago but scientists had no
+idea about much of the mineral composition of Mars. A recent discovery suggests that
+much of the planet was covered with water around 4 billion years ago.
+Astrobiologists have also detected the presence of methane gas in the atmosphere of
+Mars, indicating that the planet is indeed “alive,” either in a geologic or biologic sense. It
+is still unclear whether the methane was produced by purely geologic processes such as
+the oxidation of iron, or by microscopic organisms living in the martian sub-surface.
+Finding plumes of it that persist only during the martian spring and summer indicates that
+some ongoing, seasonal process is releasing the gas. Methane-producing microbes were
+one of the earliest forms of life on Earth, so if there is life on Mars today, it could be
+making the methane from carbon dioxide in the martian atmosphere.
+It may look like a familiar sight, but
+this sunset is not from Earth. This
+lovely, otherworldly evening was
+captured by the rover Spirit in 2005 as
+it peered toward the western sky from
+its perch in Gusev Crater on Mars. Like
+no other spacecraft, the Mars
+Exploration Rovers have afforded us a
+perspective much like our own on
+another world, making Mars feel that
+much more like home.

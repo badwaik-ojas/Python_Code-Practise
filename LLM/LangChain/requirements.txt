@@ -26,3 +26,9 @@ huggingface-hub
 diffusers
 chromadb
 langchain_chroma
+streamlit-chat
+streamlit
+unstructured
+pi-heif
+pdf2image
+unstructured-inference
