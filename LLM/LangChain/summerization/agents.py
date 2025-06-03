@@ -8,6 +8,8 @@ from langchain.agents import initialize_agent, Tool
 from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
+from langchain.agents.agent_types import AgentType
+
 
 load_dotenv()
 
@@ -27,7 +29,7 @@ tools = [
 agent_executor = initialize_agent(
     tools=tools,
     llm=llm,
-    agent="zero-shot-react-description",
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
     verbose=True
 )
 
