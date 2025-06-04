@@ -36,3 +36,4 @@ langgraph
 typing_extensions
 typing
 gandalf
+langchain_tavily

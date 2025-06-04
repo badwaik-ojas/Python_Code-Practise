@@ -17,9 +17,9 @@ from dotenv import load_dotenv, find_dotenv
 # Load environment variables
 load_dotenv(find_dotenv(), override=True)
 
-from schemas import AnswerQuestion
+from schemas import AnswerQuestion, ReviseAnswer
 
-llm = ChatOpenAI(model="o4-mini")
+llm = ChatOpenAI(model="gpt-3.5-turbo")
 parser = JsonOutputToolsParser(return_id=True)
 parser_pydantic = PydanticToolsParser(tools=[AnswerQuestion])
 
@@ -50,18 +50,18 @@ first_responder = first_responder_prompt_template | llm.bind_tools(
     tools=[AnswerQuestion], tool_choice="AnswerQuestion"
 )
 
-# revise_instructions = """Revise your previous answer using the new information.
-#     - You should use the previous critique to add important information to your answer.
-#         - You MUST include numerical citations in your revised answer to ensure it can be verified.
-#         - Add a "References" section to the bottom of your answer (which does not count towards the word limit). In form of:
-#             - [1] https://example.com
-#             - [2] https://example.com
-#     - You should use the previous critique to remove superfluous information from your answer and make SURE it is not more than 250 words.
-# """
+revise_instructions = """Revise your previous answer using the new information.
+    - You should use the previous critique to add important information to your answer.
+        - You MUST include numerical citations in your revised answer to ensure it can be verified.
+        - Add a "References" section to the bottom of your answer (which does not count towards the word limit). In form of:
+            - [1] https://example.com
+            - [2] https://example.com
+    - You should use the previous critique to remove superfluous information from your answer and make SURE it is not more than 250 words.
+"""
 
-# revisor = actor_prompt_template.partial(
-#     first_instruction=revise_instructions
-# ) | llm.bind_tools(tools=[ReviseAnswer], tool_choice="ReviseAnswer")
+revisor = actor_prompt_template.partial(
+    first_instruction=revise_instructions
+) | llm.bind_tools(tools=[ReviseAnswer], tool_choice="ReviseAnswer")
 
 
 if __name__ == "__main__":

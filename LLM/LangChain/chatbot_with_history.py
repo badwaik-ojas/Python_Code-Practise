@@ -26,7 +26,8 @@ prompt = ChatPromptTemplate.from_messages([
 history = FileChatMessageHistory(file_path="chat_history.json")
 
 # Memory with persistent backend
-memory = ConversationBufferMemory(chat_memory=history, return_messages=True)
+memory = ConversationBufferMemory(return_messages=True)
+memory.chat_memory.messages = history
 
 # Create the chain with memory
 chain = RunnableWithMessageHistory(
