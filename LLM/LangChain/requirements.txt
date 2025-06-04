@@ -32,3 +32,7 @@ unstructured
 pi-heif
 pdf2image
 unstructured-inference
+langgraph
+typing_extensions
+typing
+gandalf
