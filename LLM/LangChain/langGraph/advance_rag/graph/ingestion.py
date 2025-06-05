@@ -3,6 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_openai import OpenAIEmbeddings
+from uuid import uuid4
 
 load_dotenv(find_dotenv(), override=True)
 
@@ -19,6 +20,8 @@ text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=250, chunk_overlap=0
 )
 doc_splits = text_splitter.split_documents(docs_list)
+uuids = [str(uuid4()) for _ in range(len(doc_splits))]
+
 
 # vectordb = Chroma(
 #         collection_name="rag-chroma",
@@ -27,10 +30,20 @@ doc_splits = text_splitter.split_documents(docs_list)
 #                 )
 # vectordb.add_documents(documents=doc_splits)
 
+
+persist_directory = "./langgraph_chroma_db"
+# vector_store = Chroma.from_documents(
+#     documents=doc_splits,
+#     embedding=OpenAIEmbeddings(),
+#     ids=uuids,
+#     persist_directory=persist_directory,
+#     collection_name="rag-chroma" # Optional: name your collection
+# )
+
 retriever = Chroma(
     collection_name="rag-chroma",
-    persist_directory="./.chroma",
+    persist_directory=persist_directory,
     embedding_function=OpenAIEmbeddings(),
 ).as_retriever()
 
-# print(retriever.invoke("What is Corrective RAG?"))
+print(retriever.invoke("What is Corrective RAG?"))
