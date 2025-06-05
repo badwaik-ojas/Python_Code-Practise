@@ -33,4 +33,4 @@ retriever = Chroma(
     embedding_function=OpenAIEmbeddings(),
 ).as_retriever()
 
-print(retriever)
+# print(retriever.invoke("What is Corrective RAG?"))

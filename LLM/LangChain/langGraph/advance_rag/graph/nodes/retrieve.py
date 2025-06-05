@@ -1,7 +1,7 @@
 from typing import Any, Dict
 
 from graph.state import GraphState
-from ingestion import retriever
+from graph.ingestion import retriever
 
 
 def retrieve(state: GraphState) -> Dict[str, Any]:
@@ -11,13 +11,13 @@ def retrieve(state: GraphState) -> Dict[str, Any]:
     documents = retriever.invoke(question)
     return {"documents": documents, "question": question}
 
-# Dummy test input
-dummy_state = {
-    "question": "What is Corrective RAG?",
-    "documents": [],
-    "generation": "",
-    "web_search": False
-}
+# # Dummy test input
+# dummy_state = {
+#     "question": "What is Corrective RAG?",
+#     "documents": [],
+#     "generation": "",
+#     "web_search": False
+# }
 
-# Output
-print(retrieve(dummy_state))
+# # Output
+# print(retrieve(dummy_state))
