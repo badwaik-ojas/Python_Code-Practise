@@ -15,6 +15,8 @@ def web_search(state: GraphState) -> Dict[str, Any]:
     question = state["question"]
     if "documents" in state: # if the route to web search in first time then give error
         documents = state["documents"]
+    else:
+        documents = None
         
     tavily_results = web_search_tool.invoke({"query": question})["results"]
     joined_tavily_result = "\n".join(
@@ -28,5 +30,5 @@ def web_search(state: GraphState) -> Dict[str, Any]:
     return {"documents": documents, "question": question}
 
 
-if __name__ == "__main__":
-    web_search(state={"question": "agent memory", "documents": None})
+# if __name__ == "__main__":
+#     web_search(state={"question": "agent memory", "documents": None})
