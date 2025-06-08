@@ -3,7 +3,7 @@ from langchain_core.runnables import RunnableSequence
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 
-llm = ChatOpenAI(temperature=0)
+llm = ChatOpenAI(model='gpt-4-turbo', temperature=0)
 
 
 class GradeHallucinations(BaseModel):
@@ -14,7 +14,7 @@ class GradeHallucinations(BaseModel):
     )
 
 
-structured_llm_grader = llm.with_structured_output(GradeHallucinations)
+structured_llm_grader = llm.with_structured_output(GradeHallucinations, method='function_calling')
 
 system = """You are a grader assessing whether an LLM generation is grounded in / supported by a set of retrieved facts. \n 
      Give a binary score 'yes' or 'no'. 'Yes' means that the answer is grounded in / supported by the set of facts."""

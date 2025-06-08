@@ -14,8 +14,8 @@ class RouteQuery(BaseModel):
     )
 
 
-llm = ChatOpenAI(temperature=0)
-structured_llm_router = llm.with_structured_output(RouteQuery)
+llm = ChatOpenAI(model='gpt-4-turbo', temperature=0)
+structured_llm_router = llm.with_structured_output(RouteQuery, method='function_calling')
 
 system = """You are an expert at routing a user question to a vectorstore or web search.
 The vectorstore contains documents related to agents, prompt engineering, and adversarial attacks.

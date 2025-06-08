@@ -2,7 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 
-llm = ChatOpenAI(temperature=0)
+llm = ChatOpenAI(model='gpt-4-turbo', temperature=0)
 
 
 class GradeDocuments(BaseModel):
@@ -13,7 +13,7 @@ class GradeDocuments(BaseModel):
     )
 
 
-structured_llm_grader = llm.with_structured_output(GradeDocuments)
+structured_llm_grader = llm.with_structured_output(GradeDocuments, method='function_calling')
 
 system = """You are a grader assessing relevance of a retrieved document to a user question. \n 
     If the document contains keyword(s) or semantic meaning related to the question, grade it as relevant. \n

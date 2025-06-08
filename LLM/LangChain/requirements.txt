@@ -37,3 +37,4 @@ typing_extensions
 typing
 gandalf
 langchain_tavily
+langgraph-checkpoint-sqlite
